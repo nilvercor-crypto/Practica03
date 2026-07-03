@@ -11,11 +11,13 @@ function Productos() {
     cargarProductos();
   }, []);
 
-  async function cargarProductos() {
-    const data = await getProductos();
+async function cargarProductos() {
+  const data = await getProductos();
 
-    setProductos(data);
-  }
+  console.log(data);
+
+  setProductos(data);
+}
 
   const productosFiltrados = productos.filter(
     (producto) =>
