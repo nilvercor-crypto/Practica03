@@ -19,8 +19,6 @@ function Login() {
       alert("Complete todos los campos.");
       return;
     }
-
-    // Validación de credenciales
     if (
       correo !== usuarioValido.correo ||
       password !== usuarioValido.password
