@@ -11,7 +11,7 @@ function SobreMi() {
         <div className="text-center">
 
           <img
-            src="img/nilver.jpg"
+            src="/img/nilver.jpg"
             alt="Foto de Nilver Coronado"
             className="w-40 h-40 rounded-full mx-auto mb-6 object-cover border-4 border-cyan-500 shadow-lg"
           />

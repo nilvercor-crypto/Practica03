@@ -1,11 +1,15 @@
 function ProductCard({ producto }) {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-      <img
-        src={producto.imagen}
-        alt={producto.nombre}
-        className="w-full h-56 object-cover"
-      />
+    <img
+  src={producto.imagen}
+  alt={producto.nombre}
+  className="w-full h-56 object-cover"
+  onError={(e) => {
+    e.target.src =
+      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80";
+  }}
+/>
 
       <div className="p-4">
         <h2 className="text-xl font-bold text-gray-800">{producto.nombre}</h2>
